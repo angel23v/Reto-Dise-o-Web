@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Very-Dark-Magenta-ease: hsla(300, 43%, 22%, 0.549);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --font-size-content: 18px;
+  --font-family-main: "League Spartan", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 150px auto;
+  max-width: 1340px;
+  background-color: var(--White);
+  font-family: var(--font-family-main);
+}
+
+.containerUno {
+  display: flex;
+  margin-top: 70px;
+}
+
+.info {
+  margin-left: 100px;
+}
+
+.stars {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.stars .calf {
+  width: 400px;
+  color: rgb(100, 14, 100);
+  background-color: #f8f3f8;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.calf h4 {
+  margin-top: 15px;
+}
+
+.calf img {
+  margin-top: 10px;
+  height: 20px;
+  width: 15px;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+.stars .uno {
+  display: flex;
+}
+
+.stars .dos {
+  display: flex;
+  margin-left: 100px;
+}
+
+.stars .tres {
+  display: flex;
+  margin-left: 200px;
+}
+
+.focus {
+  color: var(--Very-Dark-Magenta);
+
+  font-size: 50px;
+}
+
+.description {
+  margin-top: 0;
+  margin-left: 50px;
+  font-size: 14px;
+  color: rgb(116, 109, 109);
+}
+
+.container {
+  display: flex;
+
+  margin-left: 70px;
+}
+
+.container .one {
+  margin-top: 40px;
+}
+
+.container .two {
+  margin-top: 75px;
+}
+
+.container .three {
+  margin-top: 110px;
+}
+
+.personas {
+  color: white;
+  background-color: var(--Very-Dark-Magenta);
+  width: 30%;
+  height: 35%;
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 17px;
+}
+
+.gnrlInfo {
+  display: flex;
+  margin-top: 15px;
+}
+
+.personas img {
+  height: 50px;
+  border-radius: 70px;
+  margin: 20px;
+}
+
+.gnrlInfo .name {
+  margin-top: 25px;
+}
+
+.gnrlInfo .ocupacion {
+  color: violet;
+  margin-top: 0;
+}
+
+.personas p {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: var(--font-size-content);
+  line-height: 1.2rem;
+}
+
+.attribution {
+  margin-top: 5px;
+  text-align: left;
+  width: 400px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 760px) {
+  body {
+    margin: 5rem auto;
+  }
+
+  .containerUno {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .info {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .focus {
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+    font-size: 40px;
+    margin-left: 0;
+  }
+
+  .description {
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 14px;
+    color: rgb(116, 109, 109);
+    line-height: 1.2rem;
+  }
+
+  .stars {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+  }
+
+  .stars .calf {
+    width: 100%;
+    color: rgb(100, 14, 100);
+    background-color: #f8f3f8;
+    margin-left: 1px;
+    margin-right: 5px;
+    height: 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .calf .imgs {
+    margin-left: 160px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+
+  .calf .imgs img {
+    margin-top: 0px;
+    height: 20px;
+    width: 15px;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .calf h4 {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .personas {
+    color: white;
+    background-color: var(--Very-Dark-Magenta);
+    width: 100%;
+    height: 35%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 17px;
+    margin-top: 0;
+  }
+
+  .personas p {
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-size: var(--font-size-content);
+    line-height: 1.2rem;
+  }
+
+  .attribution {
+    margin-top: 15px;
+    text-align: center;
+    width: 400px;
+  }
+}
